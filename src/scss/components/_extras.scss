@@ -1,11 +1,11 @@
-.popular {
-  padding: 73px 0 28px;
+.extras {
+  padding: 46px 0 28px;
   &__title {
     margin-bottom: 9px;
   }
   &__descr {
     text-align: center;
-    margin: 0 auto 31px;
+    margin: 0 auto 56px;
   }
   &__list {
     display: grid;
@@ -13,6 +13,6 @@
     column-gap: 28px;
   }
   &__item {
-    grid-column: 3 span;
+    grid-column: 4 span;
   }
 }
