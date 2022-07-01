@@ -1,0 +1,112 @@
+.categories {
+  &__wrapper {
+    padding-bottom: 28px;
+  }
+  &__title {
+    margin-bottom: 9px;
+  }
+  &__descr {
+    max-width: 630px;
+    font-size: 14px;
+    text-align: center;
+    margin: 0 auto 55px;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    row-gap: 42px;
+    column-gap: 16px;
+  }
+  &__item {
+    background: var(--color-white);
+    box-shadow: (0px 4px 35px rgba(0, 0, 0, 0.25));
+    transition: transform 0.1s;
+    &--1 {
+      grid-column: 6 span;
+      grid-row: 1 span;
+    }
+    &--2 {
+      grid-column: 3 span;
+      grid-row: 2 span;
+      display: flex;
+      align-items: center;
+    }
+    &--3 {
+      grid-column: 3 span;
+      grid-row: 2 span;
+      display: flex;
+      align-items: center;
+    }
+    &--4 {
+      grid-column: 6 span;
+      grid-row: 1 span;
+    }
+    &:hover {
+      transform: scale(1.01);
+      transition: transform 0.3s;
+    }
+  }
+  &__link {
+    overflow: hidden;
+    border-radius: 32px;
+    height: 100%;
+    &--laptop {
+      display: flex;
+      flex-direction: column;
+      padding: 0 42px;
+      .categories__info {
+        text-align: right;
+        margin-left: auto;
+      }
+    }
+    &--phone {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .categories__image {
+        margin-bottom: 42px;
+      }
+      .categories__info {
+        text-align: center;
+        margin: 0 auto;
+      }
+    }
+    &--tablet {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .categories__info {
+        text-align: center;
+        order: -1;
+        margin: 0 auto 42px;
+      }
+    }
+    &--watch {
+      display: flex;
+      align-items: center;
+      padding: 0 42px;
+      .categories__info {
+        text-align: right;
+      }
+    }
+  }
+  &__img {
+    height: 100%;
+  }
+  &__info {
+    max-width: 250px;
+  }
+  &__name {
+    display: block;
+    font-size: 15px;
+    line-height: 19px;
+    color: var(--color-black);
+  }
+  &__slogan {
+    display: block;
+    font-family: "Readex Pro", sans-serif;
+    font-size: 32px;
+    line-height: 38px;
+    color: var(--color-black);
+  }
+}
