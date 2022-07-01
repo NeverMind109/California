@@ -156,3 +156,12 @@ a {
     padding: 14px 63px;
   }
 }
+
+.burger {
+  @include burger;
+
+  @include small-tablet {
+    display: flex;
+    z-index: 100;
+  }
+}

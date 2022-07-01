@@ -1,0 +1,17 @@
+.header {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 28px 0 57px;
+    background-color: var(--color-light);
+  }
+  &__btns {
+    @include flex-v-center;
+  }
+  &__search {
+    margin-right: 13px;
+  }
+  &__cart {
+    margin-right: 20px;
+  }
+}

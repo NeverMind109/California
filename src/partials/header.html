@@ -1,3 +1,70 @@
 <header class="header">
-  <div class="container"></div>
+  <div class="container">
+    <div class="header__wrapper">
+      <a class="logo" href="index.html">
+        <img
+          class="logo__img"
+          src="img/logo.svg"
+          alt="Logo"
+          width="170"
+          height="21"
+        />
+      </a>
+      <nav class="nav" title="Navigation" data-menu>
+        <ul class="list-reset nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="# data-menu-item">all products</a>
+          </li>
+          <li class="nav__item nav__link nav__link-caret">
+            Solutions
+            <ul class="list-reset nav__caret">
+              <li class="nav__caret-item">
+                <a class="nav__caret-link" href="#" data-menu-item>Lorem</a>
+              </li>
+              <li class="nav__caret-item">
+                <a class="nav__caret-link" href="#" data-menu-item>Ipsum</a>
+              </li>
+              <li class="nav__caret-item">
+                <a class="nav__caret-link" href="#" data-menu-item>Dolor</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#" data-menu-item>ABOUT</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#" data-menu-item>Support</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__btns">
+        <form class="search header__search" action="search">
+          <input
+            class="search__input"
+            type="search"
+            id="search"
+            aria-label="Search Field"
+          />
+          <label class="search__label" for="search"></label>
+        </form>
+        <a class="cart header__cart" href="#">
+          <img
+            class="cart__img"
+            src="img/cart.svg"
+            alt="Cart Icon"
+            width="40"
+            height="24"
+          />
+        </a>
+      </div>
+      <button
+        class="btn-reset burger"
+        aria-label="Open Menu"
+        aria-expanded="false"
+        data-burger
+      >
+        <span class="burger__line"></span>
+      </button>
+    </div>
+  </div>
 </header>

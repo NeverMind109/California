@@ -1,0 +1,61 @@
+.nav {
+  &__list {
+    @include flex-v-center;
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-right: 45px;
+    }
+  }
+  &__link {
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: var(--color-black);
+    &-caret {
+      position: relative;
+      cursor: pointer;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 12px;
+        height: 8px;
+        background: url("../img/caret.svg") no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin-left: 3px;
+        transition: transform 0.3s ease-in-out;
+      }
+      &--active {
+        &::after {
+          transform: rotate(180deg) translateY(50%);
+        }
+      }
+    }
+  }
+  &__caret {
+    position: absolute;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    width: calc(100% + 15px);
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    padding: 10px 0;
+    &--active {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  &__caret-item {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  &__caret-link {
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+  }
+}

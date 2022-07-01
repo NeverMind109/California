@@ -5,4 +5,7 @@
 @import "settings";
 
 // подключения компонентов страницы
+@import "./components/nav";
+@import "./components/search";
+// подключения секций страницы
 @import "./components/header";
