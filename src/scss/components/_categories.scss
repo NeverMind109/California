@@ -8,7 +8,6 @@
   &__descr {
     max-width: 630px;
     font-size: 14px;
-    text-align: center;
     margin: 0 auto 55px;
   }
   &__list {
@@ -58,6 +57,9 @@
         text-align: right;
         margin-left: auto;
       }
+      .categories__image {
+        height: 100%;
+      }
     }
     &--phone {
       display: flex;
@@ -88,10 +90,10 @@
       .categories__info {
         text-align: right;
       }
+      .categories__image {
+        height: 100%;
+      }
     }
-  }
-  &__image {
-    height: 100%;
   }
   &__info {
     max-width: 250px;
