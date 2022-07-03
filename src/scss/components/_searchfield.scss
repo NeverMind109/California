@@ -5,11 +5,20 @@
   }
   &__title {
     margin-bottom: 25px;
+
+    @include small-tablet {
+      margin-bottom: 9px;
+    }
   }
   &__form {
     position: relative;
     width: 650px;
     margin: 0 auto 17px;
+
+    @include small-tablet {
+      width: 100%;
+      margin: 0 auto 10px;
+    }
   }
   &__btn {
     position: absolute;
@@ -42,10 +51,12 @@
       color: var(--color-black);
     }
   }
-  &__row {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 7px;
+  &__tags {
+    @include flex-all-center;
+
+    flex-wrap: wrap;
+    max-width: 552px;
+    margin: 0 auto;
   }
   &__tag {
     font-size: 13px;
@@ -55,10 +66,15 @@
     border: 1px solid #c5c5c5;
     border-radius: 200px;
     padding: 12px 22px 13px;
-    margin-right: 7px;
+    margin: 0 4px 7px;
+    transition: color 0.3s, background-color 0.3s;
     &:focus {
       color: var(--color-light);
       background-color: var(--color-light-blue);
     }
+  }
+
+  @include small-tablet {
+    padding: 50px 0 0;
   }
 }

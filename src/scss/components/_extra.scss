@@ -3,8 +3,23 @@
   background-color: var(--color-athens);
   border-radius: 16px;
   padding: 41px 10px 0;
+
+  @include tablet {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0;
+  }
+  @include mobile {
+    flex-direction: column;
+    padding: 20px 0;
+  }
   &__info {
     margin-bottom: 30px;
+
+    @include mobile {
+      margin-bottom: 15px;
+    }
   }
   &__title {
     font-family: "Readex Pro", sans-serif;
@@ -12,8 +27,21 @@
     line-height: 35px;
     color: var(--color-black);
     margin-bottom: 30px;
+
+    @include mobile {
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 15px;
+    }
   }
   &__link {
     display: inline-block;
+  }
+  &__img {
+    @include mobile {
+      width: 200px;
+      height: 150px;
+      object-fit: inherit;
+    }
   }
 }

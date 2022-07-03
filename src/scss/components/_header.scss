@@ -10,8 +10,16 @@
   }
   &__search {
     margin-right: 13px;
+
+    @include small-tablet {
+      margin-right: 20px;
+    }
   }
   &__cart {
     margin-right: 20px;
+
+    @include small-tablet {
+      margin-right: 0;
+    }
   }
 }

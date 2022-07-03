@@ -5,13 +5,33 @@
   }
   &__descr {
     margin: 0 auto 56px;
+
+    @include small-tablet {
+      margin: 0 auto 30px;
+    }
   }
   &__list {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     column-gap: 28px;
+
+    @include tablet {
+      column-gap: 0;
+      row-gap: 30px;
+    }
+    @include small-tablet {
+      row-gap: 25px;
+    }
   }
   &__item {
     grid-column: 4 span;
+
+    @include tablet {
+      grid-column: 12 span;
+    }
+  }
+
+  @include small-tablet {
+    padding: 50px 0 0;
   }
 }

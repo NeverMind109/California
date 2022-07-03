@@ -1,4 +1,4 @@
-import Swiper, { Navigation, Pagination } from "swiper";
+import Swiper, { Navigation, Pagination, Autoplay } from "swiper";
 Swiper.use([Navigation, Pagination]);
 
 const heroSlider = document.querySelector(".hero__slider");
@@ -11,7 +11,10 @@ const slider = new Swiper(heroSlider, {
   spaceBetween: 100,
   speed: heroSliderSpeed,
   loop: true,
-
+  modules: [Autoplay],
+  autoplay: {
+    delay: 3000,
+  },
   pagination: {
     el: ".hero__pagination",
     type: "bullets",

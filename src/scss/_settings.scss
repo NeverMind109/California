@@ -133,6 +133,11 @@ a {
   line-height: 52px;
   text-align: center;
   color: var(--color-black);
+
+  @include small-tablet {
+    font-size: 25px;
+    line-height: 35px;
+  }
 }
 
 .section-subtitle {
@@ -141,6 +146,11 @@ a {
   line-height: 17px;
   text-align: center;
   color: var(--color-black);
+
+  @include small-tablet {
+    font-size: 12px;
+    line-height: 16px;
+  }
 }
 
 .btn {
@@ -154,6 +164,20 @@ a {
   padding: 14px 53px;
   &--big {
     padding: 14px 63px;
+    @include small-tablet {
+      padding: 12px 50px;
+    }
+    @include mobile {
+      padding: 8px 50px;
+    }
+  }
+  @include small-tablet {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 12px 40px;
+  }
+  @include mobile {
+    padding: 8px 40px;
   }
 }
 
@@ -163,5 +187,15 @@ a {
   @include small-tablet {
     display: flex;
     z-index: 100;
+  }
+}
+
+.logo {
+  &__img {
+    object-fit: initial;
+  }
+
+  @include mobile {
+    width: 120px;
   }
 }

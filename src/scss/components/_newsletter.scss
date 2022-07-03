@@ -7,6 +7,10 @@
     border-radius: 16px;
     padding: 47px 0 43px;
     margin: 0 auto;
+
+    @include small-tablet {
+      padding: 35px 0;
+    }
   }
   &__title {
     margin-bottom: 9px;
@@ -17,6 +21,12 @@
     text-align: center;
     color: var(--color-black);
     margin-bottom: 14px;
+
+    @include small-tablet {
+      font-size: 12px;
+      line-height: 16px;
+      margin-bottom: 15px;
+    }
   }
   &__img {
     margin-bottom: 10px;
@@ -25,6 +35,12 @@
     display: flex;
     justify-content: center;
     height: 50px;
+
+    @include small-tablet {
+      display: block;
+      height: auto;
+      padding: 0 15px;
+    }
   }
   &__input {
     width: 285px;
@@ -44,8 +60,19 @@
       line-height: 17px;
       color: var(--color-black);
     }
+
+    @include small-tablet {
+      width: 50%;
+      height: 50px;
+      border-radius: 54px;
+      margin-bottom: 10px;
+    }
+    @include mobile {
+      width: 100%;
+    }
   }
   &__btn {
+    display: inline-block;
     height: 100%;
     font-size: 14px;
     line-height: 17px;
@@ -54,5 +81,18 @@
     background-color: var(--color-black);
     border-radius: 0px 200px 200px 0px;
     padding: 0 33px;
+
+    @include small-tablet {
+      width: 50%;
+      border-radius: 54px;
+      padding: 15px 30px;
+    }
+    @include mobile {
+      width: 100%;
+    }
+  }
+
+  @include small-tablet {
+    padding: 30px 0 10px;
   }
 }
