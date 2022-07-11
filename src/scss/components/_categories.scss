@@ -39,6 +39,12 @@
       grid-row: 1 span;
 
       @include tablet {
+        grid-column: 2/12;
+      }
+      @include small-tablet {
+        grid-column: 3/11;
+      }
+      @include mobile {
         grid-column: 12 span;
       }
     }
@@ -49,9 +55,15 @@
       align-items: center;
 
       @include tablet {
-        grid-column: 12 span;
+        grid-column: 2/12;
         grid-row: 1 span;
         display: block;
+      }
+      @include small-tablet {
+        grid-column: 3/11;
+      }
+      @include mobile {
+        grid-column: 12 span;
       }
     }
     &--3 {
@@ -61,9 +73,15 @@
       align-items: center;
 
       @include tablet {
-        grid-column: 12 span;
+        grid-column: 2/12;
         grid-row: 1 span;
         display: block;
+      }
+      @include small-tablet {
+        grid-column: 3/11;
+      }
+      @include mobile {
+        grid-column: 12 span;
       }
     }
     &--4 {
@@ -71,6 +89,12 @@
       grid-row: 1 span;
 
       @include tablet {
+        grid-column: 2/12;
+      }
+      @include small-tablet {
+        grid-column: 3/11;
+      }
+      @include mobile {
         grid-column: 12 span;
       }
     }

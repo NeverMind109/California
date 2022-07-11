@@ -950,6 +950,20 @@ a {
 }
 @media (max-width: 1024px) {
   .categories__item--1 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 10;
+    grid-column: 2/12;
+  }
+}
+@media (max-width: 768px) {
+  .categories__item--1 {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 8;
+    grid-column: 3/11;
+  }
+}
+@media (max-width: 576px) {
+  .categories__item--1 {
     -ms-grid-column-span: 12;
     grid-column: 12 span;
   }
@@ -968,11 +982,25 @@ a {
 }
 @media (max-width: 1024px) {
   .categories__item--2 {
-    -ms-grid-column-span: 12;
-    grid-column: 12 span;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 10;
+    grid-column: 2/12;
     -ms-grid-row-span: 1;
     grid-row: 1 span;
     display: block;
+  }
+}
+@media (max-width: 768px) {
+  .categories__item--2 {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 8;
+    grid-column: 3/11;
+  }
+}
+@media (max-width: 576px) {
+  .categories__item--2 {
+    -ms-grid-column-span: 12;
+    grid-column: 12 span;
   }
 }
 .categories__item--3 {
@@ -989,11 +1017,25 @@ a {
 }
 @media (max-width: 1024px) {
   .categories__item--3 {
-    -ms-grid-column-span: 12;
-    grid-column: 12 span;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 10;
+    grid-column: 2/12;
     -ms-grid-row-span: 1;
     grid-row: 1 span;
     display: block;
+  }
+}
+@media (max-width: 768px) {
+  .categories__item--3 {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 8;
+    grid-column: 3/11;
+  }
+}
+@media (max-width: 576px) {
+  .categories__item--3 {
+    -ms-grid-column-span: 12;
+    grid-column: 12 span;
   }
 }
 .categories__item--4 {
@@ -1003,6 +1045,20 @@ a {
   grid-row: 1 span;
 }
 @media (max-width: 1024px) {
+  .categories__item--4 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 10;
+    grid-column: 2/12;
+  }
+}
+@media (max-width: 768px) {
+  .categories__item--4 {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 8;
+    grid-column: 3/11;
+  }
+}
+@media (max-width: 576px) {
   .categories__item--4 {
     -ms-grid-column-span: 12;
     grid-column: 12 span;
